@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:gray;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 5px solid;
+    padding: 30px;
+    border-radius: 10px;
+    border-color: yellow;
+    background-color: whitesmoke;
+    box-shadow: inset 0 0 10px;
+}
+
+form > label{
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form > input:not([type='submit']){
+    border-radius: 10px;
+    /* border: none; */
+    border-color: yellow;
+    color: black;
+    background-color: white;
+}
+form > input:not([type='submit'])::placeholder{
+    font-size: 12px;
+    text-align: start; 
+    padding-left: 5px;
+    text-transform: lowercase;
+}
+form > input:not([type='submit']):focus{
+    background-color:rgb(199, 199, 199);
+}
+form > [type='submit'] {
+    width: 100%;
+    border-radius: 40px;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: white;
+    border-color: yellow;
+    transition: .5s;
+}
+form > [type='submit']:hover{
+    background-color:rgb(173, 173, 173);
+    opacity: 1;
+    cursor: pointer;
+}
